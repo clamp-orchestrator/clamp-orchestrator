@@ -47,7 +47,7 @@ const FeaturesList = ({siteConfig}) => {
             <Feature
                 iconUrl={iconUrl}
                 title="Blazingly fast and scalable"
-                description={"Clamp handles large workloads with high throughput at low latency. It also scales linearly to ensure that orchestration is never the bottleneck in your architecture"}
+                description={"Clamp handles large workloads with high throughput at low latency. It scales linearly to ensure that orchestration is never the bottleneck in your architecture. It equally favors low latency service calls as well as long running workflows"}
             />
             <Feature
                 iconUrl={iconUrl}
