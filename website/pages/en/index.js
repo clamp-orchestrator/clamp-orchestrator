@@ -57,7 +57,7 @@ const FeaturesList = ({siteConfig}) => {
             <Feature
                 iconUrl={iconUrl}
                 title="Multi-protocol support"
-                description={"Clamp can handle workflows that contain both synchronous and asynchronous services. It can work with HTTP, AMQP and Kafka with GRPC and MQTT support on the way. Suppport for multiple protocols allows you to pick the right architecture with technologies that work for you"}
+                description={"Clamp handles workflows that involve synchronous and asynchronous steps. It can work with HTTP, AMQP and Kafka. The GRPC and MQTT support is on the way. Suppport for multiple protocols allow you to pick the right architecture and tools that work for you"}
             />
             <Feature
                 iconUrl={iconUrl}
