@@ -89,6 +89,24 @@ const ClampSummary = ({siteConfig}) => {
     )
 }
 
+const Examples = () => {
+    return (
+        <div className="examples-ctr">
+            <div className="text-content">
+                <h2 className="title medium">Examples of Clamp</h2>
+                <div className="description thin">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                </div>
+            </div>
+            <div className="code-examples">
+                Example images here
+            </div>
+        </div>
+    )
+}
+
 const Index = (props) => {
     const {config: siteConfig} = props;
 
@@ -97,6 +115,7 @@ const Index = (props) => {
             <GettingStarted siteConfig={siteConfig}/>
             <FeaturesList siteConfig={siteConfig}/>
             <ClampSummary siteConfig={siteConfig}/>
+            <Examples siteConfig={siteConfig}/>
         </div>
     )
 }

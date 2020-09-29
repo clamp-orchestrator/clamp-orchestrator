@@ -1,0 +1,9 @@
+.examples-ctr {
+    padding: 120px 18vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.examples-ctr .text-content .title {
+    margin-bottom: 18px;
+}

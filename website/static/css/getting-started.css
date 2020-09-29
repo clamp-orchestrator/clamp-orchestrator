@@ -4,6 +4,22 @@
     color: #151B3B;
 }
 
+.getting-started-ctr .button {
+    border: 2px solid #1EBFC9;
+    color: #1EBFC9;
+    border-radius: 22px;
+    font-family: inherit;
+    font-size: 12px;
+    padding: 12px;
+    margin-right: 10px;
+    width: 120px;
+}
+
+.getting-started-ctr .button:hover {
+    background-color: #1EBFC9;
+    color: white;
+}
+
 .getting-started-ctr .banner {
     position: absolute;
     width: 100%;
