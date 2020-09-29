@@ -2,7 +2,7 @@ const React = require('react');
 
 const Button = (props) => {
     return (
-        <button className="button">{props.children}</button>
+        <button className="button medium">{props.children}</button>
     )
 }
 
@@ -15,8 +15,10 @@ const GettingStarted = (props) => {
             </div>
             <div className="content-ctr">
                 <div className="content">
-                    <h1 className="title">Clamp</h1>
-                    <div className="description">An opinionated approach to microservices orchestration, by Sahaj Software.</div>
+                    <h1 className="title medium">Clamp</h1>
+                    <div className="description thin">An opinionated approach to microservices orchestration, by Sahaj
+                        Software.
+                    </div>
                     <div className="actions">
                         <Button>GET STARTED</Button>
                         <Button>INSTALL</Button>
@@ -27,10 +29,43 @@ const GettingStarted = (props) => {
     )
 }
 
-const Features = () => {
+const Feature = ({title, description, iconUrl}) => {
     return (
-        <div className="features-ctr">
-            Features here
+        <div className="feature">
+            <div className="title">
+                <img src={iconUrl}/>
+                <h3 className="medium">{title}</h3>
+            </div>
+            <div className="description thin">{description}</div>
+        </div>
+    )
+}
+
+const FeaturesList = ({ siteConfig }) => {
+    const iconUrl = `${siteConfig.baseUrl}/img/feature_point.svg`
+
+    return (
+        <div className="features-list-ctr">
+            <Feature
+                iconUrl={iconUrl}
+                title="Feature Point"
+                description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex"}
+            />
+            <Feature
+                iconUrl={iconUrl}
+                title="Feature Point"
+                description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex"}
+            />
+            <Feature
+                iconUrl={iconUrl}
+                title="Feature Point"
+                description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex"}
+            />
+            <Feature
+                iconUrl={iconUrl}
+                title="Feature Point"
+                description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex"}
+            />
         </div>
     )
 }
@@ -41,7 +76,7 @@ const Index = (props) => {
     return (
         <div className="wrapper">
             <GettingStarted siteConfig={siteConfig}/>
-            <Features />
+            <FeaturesList siteConfig={siteConfig}/>
         </div>
     )
 }

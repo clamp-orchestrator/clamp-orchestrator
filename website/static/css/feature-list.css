@@ -1,0 +1,22 @@
+.features-list-ctr {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 100px;
+    grid-row-gap: 50px;
+    padding: 100px 18vw;
+}
+
+.features-list-ctr .feature .title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.features-list-ctr .title img {
+    width: 28px;
+    margin-right: 20px;
+}
+
+.features-list-ctr .feature .description {
+    padding-left: 48px;
+}

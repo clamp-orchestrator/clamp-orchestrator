@@ -20,7 +20,6 @@ button {
     color: #1EBFC9;
     border-radius: 22px;
     font-family: inherit;
-    font-weight: 500;
     font-size: 12px;
     padding: 12px;
     margin-right: 10px;
@@ -31,10 +30,24 @@ button {
     background-color: #1EBFC9;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: unset;
+}
+
 h1 {
     font-size: clamp(18px, 2.5vw, 46px);
+}
+
+h3 {
+    font-size: clamp(14px, 1.3vw, 25px);
+}
+
+.thin {
+    font-weight: 300;
+}
+
+.medium {
     font-weight: 500;
-    margin: unset;
 }
 
 .navPusher {
