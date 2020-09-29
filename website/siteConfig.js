@@ -21,7 +21,7 @@ const users = [
 ];
 
 const siteConfig = {
-  title: 'Test Site', // Title for your website.
+  title: 'Clamp', // Title for your website.
   tagline: 'A website for testing',
   url: 'https://clamp-orchestrator.github.io', // Your website URL
   baseUrl: '/clamp-orchestrator/', // Base URL for your project */
@@ -57,6 +57,10 @@ const siteConfig = {
     primaryColor: '#7a3779',
     secondaryColor: '#552654',
   },
+
+  stylesheets: [
+    "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+  ],
 
   /* Custom fonts for website */
   /*
