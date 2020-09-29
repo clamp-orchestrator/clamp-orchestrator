@@ -33,7 +33,7 @@ const Feature = ({title, description, iconUrl}) => {
     return (
         <div className="feature">
             <div className="title">
-                <img src={iconUrl}/>
+                <img src={iconUrl} alt="icon"/>
                 <h3 className="medium">{title}</h3>
             </div>
             <div className="description thin">{description}</div>
@@ -41,7 +41,7 @@ const Feature = ({title, description, iconUrl}) => {
     )
 }
 
-const FeaturesList = ({ siteConfig }) => {
+const FeaturesList = ({siteConfig}) => {
     const iconUrl = `${siteConfig.baseUrl}/img/feature_point.svg`
 
     return (
@@ -70,6 +70,25 @@ const FeaturesList = ({ siteConfig }) => {
     )
 }
 
+const ClampSummary = ({siteConfig}) => {
+    return (
+        <div className="summary-ctr">
+            <div className="illustration">
+                <img src={`${siteConfig.baseUrl}img/temp_gif.png`} alt="summary_image"/>
+            </div>
+            <div className="content">
+                <h2 className="title medium">
+                    A Summary of Clamp
+                </h2>
+                <div className="description">
+                    A small writeup of what Clamp is about and can include
+                    its by Sahaj and a slide show or gif about how it works could come above
+                </div>
+            </div>
+        </div>
+    )
+}
+
 const Index = (props) => {
     const {config: siteConfig} = props;
 
@@ -77,6 +96,7 @@ const Index = (props) => {
         <div className="wrapper">
             <GettingStarted siteConfig={siteConfig}/>
             <FeaturesList siteConfig={siteConfig}/>
+            <ClampSummary siteConfig={siteConfig}/>
         </div>
     )
 }

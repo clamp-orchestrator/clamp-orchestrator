@@ -1,0 +1,25 @@
+.summary-ctr {
+    background-color: #0F82B2;
+    color: #FFFFFF;
+    padding: 120px 25vw;
+}
+
+.summary-ctr .content {
+    text-align: center;
+    padding: 0px 50px;
+}
+
+.summary-ctr .illustration {
+    margin-bottom: 60px;
+}
+
+.summary-ctr .illustration img {
+    width: 100%;
+}
+.summary-ctr .content .title {
+    margin-bottom: 16px;
+}
+
+.summary-ctr .content .description {
+    font-size: 20px;
+}
