@@ -27,12 +27,21 @@ const GettingStarted = (props) => {
     )
 }
 
+const Features = () => {
+    return (
+        <div className="features-ctr">
+            Features here
+        </div>
+    )
+}
+
 const Index = (props) => {
     const {config: siteConfig} = props;
 
     return (
         <div className="wrapper">
             <GettingStarted siteConfig={siteConfig}/>
+            <Features />
         </div>
     )
 }

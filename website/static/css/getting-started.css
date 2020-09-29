@@ -1,5 +1,7 @@
 .getting-started-ctr {
     position: relative;
+    height: 400px;
+    color: #151B3B;
 }
 
 .getting-started-ctr .banner {
@@ -11,14 +13,15 @@
 
 .getting-started-ctr .banner img {
     width: 100%;
-    margin-top: -170px;
+    height: 100%;
 }
 
 .getting-started-ctr .content-ctr {
-    width: min(100%, 1000px);
-    margin: 80px auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    padding: 80px 20vw 0px 20vw;
+}
+
+.getting-started-ctr .content-ctr .content {
+    max-width: 500px;
 }
 
 .getting-started-ctr .content-ctr .title {
