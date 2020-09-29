@@ -16,9 +16,7 @@ const GettingStarted = (props) => {
             <div className="content-ctr">
                 <div className="content">
                     <h1 className="title medium">Clamp</h1>
-                    <div className="description thin">An opinionated approach to microservices orchestration, by Sahaj
-                        Software.
-                    </div>
+                    <div className="description thin">An opinionated approach to micro-services orchestration using workflows. Build microservices ground up or strangulate existing monoliths seamlessly</div>
                     <div className="actions">
                         <Button>GET STARTED</Button>
                         <Button>INSTALL</Button>
@@ -48,23 +46,23 @@ const FeaturesList = ({siteConfig}) => {
         <div className="features-list-ctr">
             <Feature
                 iconUrl={iconUrl}
-                title="Feature Point"
-                description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex"}
+                title="Blazingly fast and scalable"
+                description={"Clamp handles large workloads with high throughput at low latency. It also scales linearly to ensure that orchestration is never the bottleneck in your architecture"}
             />
             <Feature
                 iconUrl={iconUrl}
-                title="Feature Point"
-                description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex"}
+                title="Technology agnostic"
+                description={"Clamp, written in GoLang, is a stand alone component that can be deployed as a binary or as a container within your infrastructure. It is independent of technology stack of services and continues to provide the same low latency throughput"}
             />
             <Feature
                 iconUrl={iconUrl}
-                title="Feature Point"
-                description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex"}
+                title="Multi-protocol support"
+                description={"Clamp can handle workflows that contain both synchronous and asynchronous services. It can work with HTTP, AMQP and Kafka with GRPC and MQTT support on the way. Suppport for multiple protocols allows you to pick the right architecture with technologies that work for you"}
             />
             <Feature
                 iconUrl={iconUrl}
-                title="Feature Point"
-                description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex"}
+                title="Transparent orchestration with no agents"
+                description={"Clamp works transparently with diverse communication channels (HTTP, AMQP, Kafka). The services do not need consumer libraries or agents for orchestration. Clamp is an ideal tool to help build microservices ground up as well as strangulate existing monoliths to microservices"}
             />
         </div>
     )
@@ -78,11 +76,10 @@ const ClampSummary = ({siteConfig}) => {
             </div>
             <div className="content">
                 <h2 className="title medium">
-                    A Summary of Clamp
+                   Clamp overview
                 </h2>
                 <div className="description">
-                    A small writeup of what Clamp is about and can include
-                    its by Sahaj and a slide show or gif about how it works could come above
+                    A peek into Clamp framework, it's philosophy and the supporting toolchain
                 </div>
             </div>
         </div>
@@ -93,15 +90,13 @@ const Examples = () => {
     return (
         <div className="examples-ctr">
             <div className="text-content">
-                <h2 className="title medium">Examples of Clamp</h2>
+                <h2 className="title medium">Use cases for Clamp</h2>
                 <div className="description thin">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    Clamp is an opinionated approach to workflow orhcestration in microservices. There are many use cases where Clamp can help with right design and evolution of architecture. The most popular ones have been shown here. Refer to our documentation section to read about these in detail and understand how you can adopt clamp to evolve your architecture with right design
                 </div>
             </div>
             <div className="code-examples">
-                Example images here
+                Greenfield microservices
             </div>
         </div>
     )
