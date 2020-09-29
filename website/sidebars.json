@@ -2,9 +2,9 @@
   "docs": {
     "Welcome": ["about-docs"],
     "Getting Started": ["quickstart"],
-    "Usage": ["usage"],
+    "Usage": ["installation", "configuration"],
     "API Reference": ["api-reference"],
-    "Concepts": ["internals"],
+    "Concepts": ["design"],
     "Contributing": ["contribution-guide"],
     "Use Cases": ["use-cases"],
     "Guides": ["troubleshooting"],
