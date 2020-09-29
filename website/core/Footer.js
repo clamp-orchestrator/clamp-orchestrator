@@ -7,9 +7,11 @@
 
 const React = require('react');
 
-function Footer(props) {
+function Footer() {
     return (
-        <footer>
+        <footer className="footer thin">
+            <span className="medium red">Contact Us </span>
+            to know more about Clamp
         </footer>
     );
 }
