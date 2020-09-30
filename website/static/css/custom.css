@@ -22,6 +22,8 @@ button {
 
 h1, h2, h3, h4, h5, h6 {
     margin: unset;
+    font-weight: 500;
+    color: #151B3B;
 }
 
 h1 {
@@ -56,6 +58,23 @@ h3 {
 
 .navPusher .docMainWrapper {
     padding: 0 60px;
+}
+
+.docMainWrapper {
+    line-height: 2em;
+}
+
+.docMainWrapper * {
+    font-weight: 300;
+}
+
+.docMainWrapper h1, .docMainWrapper h2, .docMainWrapper h3 {
+    font-weight: 400;
+    line-height: 2em;
+}
+
+.docMainWrapper .mainContainer .wrapper .post .postHeader {
+    margin-bottom: 0;
 }
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {

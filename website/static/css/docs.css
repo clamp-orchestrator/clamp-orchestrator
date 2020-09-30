@@ -1,3 +1,16 @@
 a {
     color: #FE6149;
 }
+
+a:hover {
+    color: #1EBFC9;
+}
+
+article * {
+    color: #151B3B;
+}
+
+article a {
+    color: #FE6149;
+    text-decoration: underline;
+}
