@@ -8,8 +8,8 @@
 const siteConfig = {
   title: 'Clamp', // Title for your website.
   tagline: 'A workflow orchestrator for microservices',
-  url: 'https://clamp-orchestrator.github.io', // Your website URL
-  baseUrl: '/clamp-orchestrator/', // Base URL for your project */
+  url: 'https://clamp.sahaj.ai', // Your website URL
+  baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
