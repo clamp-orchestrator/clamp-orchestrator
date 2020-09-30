@@ -9,7 +9,7 @@
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
             <title>Clamp Blog</title>
-            <url>https://clamp-orchestrator.github.io/clamp-orchestrator/img/favicon.ico</url>
+            <url>https://clamp-orchestrator.github.io/clamp-orchestrator/img/logo.svg</url>
             <link>https://clamp-orchestrator.github.io/clamp-orchestrator/blog</link>
         </image>
         <copyright>Copyright © 2020 Clamp</copyright>
