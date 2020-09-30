@@ -1,9 +1,9 @@
 ---
 id: about-docs
-title: Documentation structure & navigation
+title: About documentation
 ---
 
-## Overview
+# Overview
 
 This is Clamp orchestartor documentation section. It is organized to cover various aspects of the orchestrator across various dimensions.
 
@@ -12,15 +12,15 @@ This is Clamp orchestartor documentation section. It is organized to cover vario
 * If you are looking to contribute (features, plugins, documentation or more) and grow Clamp, please heave over to [Contribution guide]() to read and understand the process.
 * If you are looking to raise an issue that you have encountered with the use of Clamp, please visit out [Support]() section to see ways and forums where community can provide help. Alternatively, create an issue for [Clamp-Core](https://github.com/clamp-orchestrator/clamp-core/issues) or [Clamp Portal](https://github.com/clamp-orchestrator/clamp-portal/issues) respectively. 
 
-## Navigation
+# Navigation
 
 You can navigate categories of the documentation on the left sidebar. Each category contains multiple topics that can be read through. When on a specific topic, the right side navigation bar allows you to jump sections within a single page.
 
-## Searching
+# Searching
 
 Documentation currently does not support search, but will be supported soon. 
 
 
-## Report documentation issues
+# Report documentation issues
 
 If you spot an issue with documentation, please be aware that documentation is stored as markdown files [here](https://github.com/clamp-orchestrator/clamp-orchestrator/tree/master/docs). Please consider submitting a [Pull Request](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork) alternatively [create an issue here](https://github.com/clamp-orchestrator/clamp-orchestrator/issues).

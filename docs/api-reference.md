@@ -4,15 +4,15 @@ title: API Reference
 sidebar_label: API Reference
 ---
 
-### Clamp API
+# Clamp API
 The following section covers API documentation for Clamp's REST API, which ships with endpoints handling workflow creation, triggering a service request, and so forth.
 
-#### Swagger
+## Swagger
 If you're someone who likes to get their hands dirty immediately, maybe you would like to check out this [Swagger](http://54.149.76.62:8642/swagger/index.html) link to try out the APIs.
 
-#### Workflows
+## Workflows
 
-##### Creation
+### Creation
 Workflows are created in Clamp by making a **POST** request to its **`/workflow`** API endpoint. 
 <details>
   <summary> Here's a sample payload: (Click to expand)</summary>
@@ -165,13 +165,13 @@ Workflows are created in Clamp by making a **POST** request to its **`/workflow`
     ```
 </details>
 
-###### Workflow Metadata
+#### Workflow Metadata
 There's some basic metadata that needs to be defined when a workflow is created. The following attributes are mandatory and must be present in the request:
 - `name` is the unique identifier for any workflow. It is recommended that you keep this short and name every workflow in a consistent manner. Camel case is recommended, but not mandatory. You could hyphenate between words or use underscores, or choose any other convention, as long as you choose one and stick with it. This field **does not accept spaces**.
 - `description` is typically a brief title describing what the workflow is for.
 - `steps` are used to describe the workflow in terms of service calls and payload transformations. Steps support simple branching strategies, as well as rollback strategies for error scenarios. See more on [defining steps](#defining-steps) below.
 
-###### Defining Steps
+#### Defining Steps
 The following section covers how to define steps in your workflow specification. Here's a sample step:
 ```
 {
@@ -229,7 +229,7 @@ There's some basic metadata that needs to be defined for a step.
 - `requestTransform` is used for transforming the request object to the step. `transform` need to be enabled to apply the transformations.
 - `Context object` can be used in both `when` and `requestTransform`. The context object can be accessed by directly specifying the `step_name` and then specify whether `request` or `response` and specify the key to access it. Ex:`step_name.response.key`. It can be nested to any level like `step_name.response.key1.key1a`
 
-##### View Workflow
+### View Workflow
 Once a workflow is defined, you can view the structure and metadata of the workflow by performing a GET request to the `/workflow/{name}` endpoint for Clamp. For example, if your workflow was called `mtcReq` and Clamp was running on `http://54.149.76.62:8642`, you would make the following cURL request:
 ```
 curl http://54.149.76.62:8642/workflow/process_claim
@@ -336,10 +336,10 @@ curl http://54.149.76.62:8642/workflow/process_claim
 ```
 </details>
 
-#### Service Requests
+## Service Requests
 A service request essentially tells Clamp to execute a particular workflow. Depending upon the workflow, it may or may not require a request body to go along with it. Let us take the example of `process_claim`, the workflow we created in the above sections. 
 
-##### Creation
+### Creation
 By making a POST request on `/serviceRequest/process_claim`, we can instruct Clamp to start the `process_claim` workflow. If our workflow requires an initial payload, we can send it in the request body.
 
 **Request**:
@@ -391,7 +391,7 @@ The above request will trigger the `process_claim` workflow with the following i
 - The `serviceRequestId` is the unique identifier for a service request.
 - The `status` field will contain the completion status for the service request.
 
-##### Check Status
+### Check Status
 The status of a service request can be polled by making a GET request on the `/serviceRequest/{id}` endpoint, where the `{id}` parameter is the service request ID obtained during creation. Hence, the following request:
 ```
 curl http://54.149.76.62:8642/serviceRequest/6102fa39-d209-4b98-8c75-d9f2ef9aa791
@@ -511,7 +511,7 @@ should respond back with the status of service request "6102fa39-d209-4b98-8c75-
 - In each step in `steps` the `status` defines the state of each step it went through. The possible values are `STARTED` / `COMPLETED` / `SKIPPED` / `FAILED`
 - The step status will be `SKIPPED` if the `when` condition is not met.
 
-##### Send Response
+### Send Response
 When an async step gets executed, the response for the step needs to be sent explicitly to clamp. The response can be sent back using an HTTP API or through AMQP / Kafka queue. 
 - HTTP
 

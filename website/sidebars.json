@@ -5,8 +5,8 @@
     "Usage": ["installation", "configuration"],
     "API Reference": ["api-reference"],
     "Concepts": ["design"],
-    "Contributing": ["contribution-guide"],
     "Use Cases": ["use-cases"],
+    "Contributing": ["contribution-guide", "core-contribution-guide", "portal-contribution-guide", "docs-contribution-guide", "code-of-conduct","authors"],
     "Guides": ["troubleshooting"],
     "Support": ["support"]
   }
