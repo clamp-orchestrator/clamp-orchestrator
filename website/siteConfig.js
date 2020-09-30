@@ -28,14 +28,14 @@ const siteConfig = {
   ],
 
   /* path to images for header/footer */
-  headerIcon: 'img/favicon.ico',
+  headerIcon: 'img/logo.svg',
   footerIcon: 'img/favicon.ico',
   favicon: 'img/favicon.ico',
 
   /* Colors for website */
   colors: {
-    primaryColor: '#7a3779',
-    secondaryColor: '#552654',
+    primaryColor: '#FFFFFF',
+    secondaryColor: '#FFFFFF',
   },
 
   stylesheets: [
