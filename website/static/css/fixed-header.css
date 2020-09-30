@@ -1,0 +1,44 @@
+.fixedHeaderContainer {
+  color: #151b3b;
+  padding: 30px;
+  box-shadow: 0 3px 6px #0000000b;
+}
+
+.fixedHeaderContainer .headerWrapper {
+  max-width: unset;
+  padding: 0 2vw;
+}
+
+.fixedHeaderContainer a {
+  height: 38px;
+}
+
+.fixedHeaderContainer header img {
+  margin-right: 26px;
+}
+
+.fixedHeaderContainer * {
+  font-size: clamp(12px, 0.6vw, 15px);
+  letter-spacing: 1.5px;
+}
+
+.fixedHeaderContainer header .headerTitleWithLogo {
+  font-size: clamp(12px, 0.6vw, 15px);
+  color: #151b3b;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.navigationSlider .slidingNav ul li a {
+  color: #151b3b;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.navigationSlider .slidingNav ul li a:hover {
+  color: #1ebfc9;
+}
+
+.navigationSlider .slidingNav ul li.siteNavItemActive a {
+  color: #1EBFC9;
+}

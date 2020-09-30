@@ -46,6 +46,7 @@ h3 {
 
 .navPusher {
     display: block;
+    padding-top: 80px;
 }
 
 .navPusher .wrapper {
