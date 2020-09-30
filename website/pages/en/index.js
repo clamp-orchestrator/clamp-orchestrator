@@ -1,8 +1,8 @@
 const React = require('react');
 
-const Button = (props) => {
+const Button = ({ className, link, children }) => {
     return (
-        <button className="button medium">{props.children}</button>
+        <button className={`button medium ${className}`}>{children}</button>
     )
 }
 
@@ -18,8 +18,8 @@ const GettingStarted = (props) => {
                     <h1 className="title medium">Clamp</h1>
                     <div className="description thin">An opinionated approach to micro-services orchestration using workflows. Build microservices ground up or strangulate existing monoliths seamlessly</div>
                     <div className="actions">
-                        <Button>GET STARTED</Button>
-                        <Button>INSTALL</Button>
+                        <Button className="transparent-button">GET STARTED</Button>
+                        <Button className="block-button">INSTALL</Button>
                     </div>
                 </div>
             </div>
