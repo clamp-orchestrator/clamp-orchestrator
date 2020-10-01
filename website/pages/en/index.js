@@ -40,27 +40,30 @@ const Feature = ({title, description, iconUrl}) => {
 }
 
 const FeaturesList = ({siteConfig}) => {
-    const iconUrl = `${siteConfig.baseUrl}/img/feature_point.svg`
+    const blazinglyFastScalableIconPath = `${siteConfig.baseUrl}/img/feature_1.svg`
+    const technologyAgnosticIconPath = `${siteConfig.baseUrl}/img/feature_2.svg`
+    const multiProtocolIconPath = `${siteConfig.baseUrl}/img/feature_3.svg`
+    const transparentOrchestrationIconPath = `${siteConfig.baseUrl}/img/feature_4.svg`
 
     return (
         <div className="features-list-ctr">
             <Feature
-                iconUrl={iconUrl}
+                iconUrl={blazinglyFastScalableIconPath}
                 title="Blazingly fast and scalable"
                 description={"Clamp handles large workloads with high throughput at low latency. It scales linearly to ensure that orchestration is never the bottleneck in your architecture. It equally favors low latency service calls as well as long running workflows"}
             />
             <Feature
-                iconUrl={iconUrl}
+                iconUrl={technologyAgnosticIconPath}
                 title="Technology agnostic"
                 description={"Clamp, written in GoLang, is a stand alone component that can be deployed as a binary or as a container within your infrastructure. It is independent of technology stack of services and continues to provide the same low latency throughput"}
             />
             <Feature
-                iconUrl={iconUrl}
+                iconUrl={multiProtocolIconPath}
                 title="Multi-protocol support"
                 description={"Clamp handles workflows that involve synchronous and asynchronous steps. It can work with HTTP, AMQP and Kafka. The GRPC and MQTT support is on the way. Suppport for multiple protocols allow you to pick the right architecture and tools that work for you"}
             />
             <Feature
-                iconUrl={iconUrl}
+                iconUrl={transparentOrchestrationIconPath}
                 title="Transparent orchestration with no agents"
                 description={"Clamp works transparently with diverse communication channels (HTTP, AMQP, Kafka). The services do not need consumer libraries or agents for orchestration. Clamp is an ideal tool to help build microservices ground up as well as strangulate existing monoliths to microservices"}
             />

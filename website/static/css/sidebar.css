@@ -5,3 +5,14 @@
 .toc .toggleNav ul li a:hover {
     color: #1EBFC9;
 }
+
+.separateOnPageNav .docsNavContainer {
+    flex: 0 0 280px;
+    border-right: 1px solid #E3E3E3;
+    padding-right: 40px;
+}
+
+.toc .toggleNav .navGroup .navGroupCategoryTitle {
+    color: #151B3B;
+    margin-bottom: 15px;
+}
