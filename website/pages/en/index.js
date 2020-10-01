@@ -1,6 +1,6 @@
 const React = require("react");
 const STATIC_FILES_PATH = process.cwd();
-const getExamplesScript = require(`${STATIC_FILES_PATH}/static/js/customExamplesScript.js`)
+const getExamplesScript = require(`${STATIC_FILES_PATH}/static/js/customExamplesScript.js`);
 const Button = ({ className, children }) => {
   return <button className={`button medium ${className}`}>{children}</button>;
 };
@@ -10,7 +10,7 @@ const GettingStarted = (props) => {
   return (
     <div className="getting-started-ctr">
       <div className="banner">
-        <img src={`${baseUrl}img/banner.png`} alt="" />
+        <img className="hide-medium-screen" src={`${baseUrl}img/banner_desktop.png`} alt="" />
       </div>
       <div className="content-ctr">
         <div className="content">

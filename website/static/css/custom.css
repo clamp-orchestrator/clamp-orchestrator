@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navPusher {
     display: block;
-    padding-top: 80px;
+    padding-top: 100px;
 }
 
 .navPusher .wrapper {
@@ -88,6 +88,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media only screen and (max-width: 1023px) {
+    .navigationSlider .slidingNav ul {
+        margin-top: 98px;
+        border: 1px solid #EDEDED;
+    }
 }
 
 @media only screen and (min-width: 1400px) {

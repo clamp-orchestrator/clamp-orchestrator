@@ -1,11 +1,17 @@
 .getting-started-ctr {
     position: relative;
-    height: 400px;
+    min-height: 400px;
     color: #151B3B;
+    background-color: #FFF8F7;
+}
+
+.getting-started-ctr * {
+    position: relative;
+    z-index: 1;
 }
 
 .getting-started-ctr .button {
-    border: 2px solid #1EBFC9;
+    border: 2px solid #1ebfc9;
     border-radius: 22px;
     font-family: inherit;
     font-size: 12px;
@@ -22,6 +28,7 @@
 
 .getting-started-ctr .transparent-button {
     color: #1EBFC9;
+    background-color: #FFF8F7;
 }
 
 .getting-started-ctr .transparent-button:hover {
@@ -30,19 +37,22 @@
 }
 
 .getting-started-ctr .banner {
+    text-align: right;
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: 0;
 }
 
 .getting-started-ctr .banner img {
-    width: 100%;
+    width: auto;
+    right: 0;
+    margin-left: auto;
     height: 100%;
 }
 
 .getting-started-ctr .content-ctr {
-    padding: 80px 20vw 0px 20vw;
+    padding: 80px 20vw 0 20vw;
 }
 
 .getting-started-ctr .content-ctr .content {
@@ -56,4 +66,16 @@
 .getting-started-ctr .content-ctr .description {
     font-size: 20px;
     margin-bottom: 28px;
+}
+
+@media only screen and (max-width: 1280px) {
+    .getting-started-ctr .banner .hide-medium-screen {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .getting-started-ctr .content-ctr {
+        padding: 80px 6vw;
+    }
 }
