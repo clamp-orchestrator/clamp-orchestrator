@@ -24,3 +24,23 @@
 .summary-ctr .content .description {
     font-size: 20px;
 }
+
+@media only screen and (max-width: 1023px) {
+    .summary-ctr {
+        padding: 60px 6vw;
+    }
+
+    .summary-ctr .content {
+        text-align: center;
+        padding: 0;
+        font-weight: 300;
+    }
+
+    .summary-ctr .content .title {
+        font-weight: 400;
+    }
+
+    .summary-ctr .content .description {
+        font-size: 16px;
+    }
+}
