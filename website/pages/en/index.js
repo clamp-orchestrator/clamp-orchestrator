@@ -171,7 +171,7 @@ const TabbedComponents = ({ imgPath }) => {
             <div className="example-img-ctr">
                 <img id={tabData[0].imageId} src={`${imgPath}/microservices.gif`} alt=""/>
                 <img id={tabData[1].imageId} src={`${imgPath}/monolith-to-microservices.gif`} alt=""/>
-                <img id={tabData[2].imageId} src={`${imgPath}/temp_example_image.png`} alt=""/>
+                <img id={tabData[2].imageId} src={`${imgPath}/data-pipeline.gif`} alt=""/>
             </div>
             <script dangerouslySetInnerHTML={{__html: script}}/>
         </div>
