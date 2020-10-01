@@ -31,18 +31,6 @@ h1, h2, h3, h4, h5, h6 {
     color: #151B3B;
 }
 
-h1 {
-    font-size: clamp(18px, 2.5vw, 46px);
-}
-
-h2 {
-    font-size: clamp(16px, 2vw, 40px);
-}
-
-h3 {
-    font-size: clamp(14px, 1.3vw, 25px);
-}
-
 .thin {
     font-weight: 300;
 }
@@ -86,6 +74,17 @@ h3 {
 }
 
 @media only screen and (min-width: 1024px) {
+    h1 {
+        font-size: clamp(18px, 2.5vw, 46px);
+    }
+
+    h2 {
+        font-size: clamp(16px, 2vw, 40px);
+    }
+
+    h3 {
+        font-size: clamp(14px, 1.3vw, 25px);
+    }
 }
 
 @media only screen and (max-width: 1023px) {

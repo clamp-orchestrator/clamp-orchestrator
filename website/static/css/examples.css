@@ -39,3 +39,9 @@
 .examples-ctr .text-content .title {
     margin-bottom: 18px;
 }
+
+@media only screen and (max-width: 1023px) {
+    .examples-ctr {
+        display: none;
+    }
+}
