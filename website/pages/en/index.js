@@ -169,7 +169,7 @@ const TabbedComponents = ({ imgPath }) => {
                 </button>
             </div>
             <div className="example-img-ctr">
-                <img id={tabData[0].imageId} src={`${imgPath}/temp_example_image.png`} alt=""/>
+                <img id={tabData[0].imageId} src={`${imgPath}/microservices.gif`} alt=""/>
                 <img id={tabData[1].imageId} src={`${imgPath}/monolith-to-microservices.gif`} alt=""/>
                 <img id={tabData[2].imageId} src={`${imgPath}/temp_example_image.png`} alt=""/>
             </div>
