@@ -1,53 +1,46 @@
-const getExamplesScript = (tabData) => {
+const getExamplesScript = (exampleList) => {
   const result = `
-    const header1 = document.getElementById('${tabData[0].headerId}');
-    const header2 = document.getElementById('${tabData[1].headerId}');
-    const header3 = document.getElementById('${tabData[2].headerId}');
-    const image1 = document.getElementById('${tabData[0].imageId}');
-    const image2 = document.getElementById('${tabData[1].imageId}');
-    const image3 = document.getElementById('${tabData[2].imageId}');
+    let currentExampleIndex = 0;
+    const previousExample = document.getElementById("previous-example");
+    const nextExample = document.getElementById("next-example");
+    const example1 = document.getElementById("example-0");
+    const example2 = document.getElementById("example-1");
+    const example3 = document.getElementById("example-2");
+    const exampleList = [example1, example2, example3];
     
-    const headerImageList = [
-      {
-        header: header1,
-        image: image1
-      },
-      {
-        header: header2,
-        image: image2
-      },
-      {
-        header: header3,
-        image: image3
-      },
-    ];
+    example2.classList.add("hide");
+    example3.classList.add("hide");
     
-    function addClass(element, className) {
-      element.classList.add(className);
-    }
-    
-    function removeClass(element, className) {
-      element.classList.remove(className);
-    }
-    
-    addClass(header1, 'highlight');
-    addClass(image2, 'hide');
-    addClass(image3, 'hide');
-    
-    function onHeaderClick(index) {
-      headerImageList.map(function (element, elementIndex) {
-        removeClass(element.header, 'highlight');
-        addClass(element.image, 'hide');
-        if (index === elementIndex) {
-          addClass(element.header, 'highlight');
-          removeClass(element.image, 'hide');
+    function selectExample(exampleList, showIndex) {
+      exampleList.map((example, index) => {
+        example.classList.add("hide");
+        if (index === showIndex) {
+          example.classList.remove("hide");
         }
       });
     }
     
-    header1.addEventListener('click', function() { onHeaderClick(0) });
-    header2.addEventListener('click', function() { onHeaderClick(1) });
-    header3.addEventListener('click', function() { onHeaderClick(2) });
+    function selectNextExample(exampleList) {
+      currentExampleIndex = (currentExampleIndex + 1) % 3;
+      const showIndex = currentExampleIndex;
+      
+      selectExample(exampleList, showIndex);
+    }
+    
+    function selectPreviousExample(exampleList) {
+      currentExampleIndex = currentExampleIndex === 0 ? exampleList.length - 1 : (currentExampleIndex - 1);
+      const showIndex = currentExampleIndex;
+      
+      selectExample(exampleList, showIndex);
+    }
+    
+    nextExample.addEventListener('click', () => {
+      selectNextExample(exampleList);
+    });
+    
+    previousExample.addEventListener('click', () => {
+      selectPreviousExample(exampleList);
+    });
   `;
 
   return result;
