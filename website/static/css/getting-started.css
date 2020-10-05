@@ -19,19 +19,11 @@
     margin-right: 10px;
     width: 120px;
     cursor: pointer;
-}
-
-.getting-started-ctr .block-button {
-    color: #FFFFFF;
-    background-color: #1EBFC9;
-}
-
-.getting-started-ctr .transparent-button {
     color: #1EBFC9;
     background-color: #FFF8F7;
 }
 
-.getting-started-ctr .transparent-button:hover {
+.getting-started-ctr button:hover {
     background-color: #1EBFC9;
     color: white;
 }
@@ -94,5 +86,14 @@
         height: 350px;
         margin-bottom: -80px;
         margin-top: -50px;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .getting-started-ctr .banner {
+        height: unset;
+    }
+    .getting-started-ctr .banner img {
+        height: auto;
     }
 }
