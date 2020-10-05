@@ -10,7 +10,11 @@ const GettingStarted = (props) => {
   return (
     <div className="getting-started-ctr">
       <div className="banner">
-        <img className="hide-medium-screen" src={`${baseUrl}img/banner_desktop.png`} alt="" />
+        <img
+          className="hide-medium-screen"
+          src={`${baseUrl}img/banner_desktop.png`}
+          alt=""
+        />
       </div>
       <div className="content-ctr">
         <div className="content">
@@ -102,56 +106,41 @@ const ClampSummary = ({ siteConfig }) => {
   );
 };
 
-const TabbedComponents = ({ imgPath }) => {
-  const tabData = [
+const ExampleList = ({ imgPath }) => {
+  const exampleList = [
     {
-      label: "Greenfield microservices",
-      headerId: "header1",
-      imageId: "image1",
+      headerLabel: "Greenfield microservices",
+      imagePath: `${imgPath}/microservices.gif`,
     },
     {
-      label: "Monolith strangulation",
-      headerId: "header2",
-      imageId: "image2",
+      headerLabel: "Monolith strangulation",
+      imagePath: `${imgPath}/monolith-to-microservices.gif`,
     },
     {
-      label: "Data ingestion and processing",
-      headerId: "header3",
-      imageId: "image3",
+      headerLabel: "Data ingestion and processing",
+      imagePath: `${imgPath}/data-pipeline.gif`,
     },
   ];
 
-  const script = getExamplesScript(tabData);
+  const script = getExamplesScript(exampleList);
   return (
-    <div>
-      <div className="tab-headers-ctr">
-        <button id={tabData[0].headerId} className="tab-header">
-          <h3>Greenfield microservices</h3>
-        </button>
-        <button id={tabData[1].headerId} className="tab-header">
-          <h3>Monolith strangulation</h3>
-        </button>
-        <button id={tabData[2].headerId} className="tab-header">
-          <h3>Data ingestion and processing</h3>
-        </button>
-      </div>
-      <div className="example-img-ctr">
-        <img
-          id={tabData[0].imageId}
-          src={`${imgPath}/microservices.gif`}
-          alt=""
-        />
-        <img
-          id={tabData[1].imageId}
-          src={`${imgPath}/monolith-to-microservices.gif`}
-          alt=""
-        />
-        <img
-          id={tabData[2].imageId}
-          src={`${imgPath}/data-pipeline.gif`}
-          alt=""
-        />
-      </div>
+    <div className="example-list-ctr">
+      {exampleList.map((example, index) => {
+        return (
+          <div id={`example-${index}`} className="example-ctr" key={index}>
+            <h3 className="title medium">{example.headerLabel}</h3>
+            <div className="image">
+              <img src={example.imagePath} alt="" />
+            </div>
+          </div>
+        );
+      })}
+      <button id="previous-example" className="left arrow">
+        <div />
+      </button>
+      <button id="next-example" className="right arrow">
+        <div />
+      </button>
       <script dangerouslySetInnerHTML={{ __html: script }} />
     </div>
   );
@@ -171,9 +160,7 @@ const Examples = ({ siteConfig }) => {
           architecture with right design
         </div>
       </div>
-      <div className="code-examples">
-        <TabbedComponents imgPath={`${siteConfig.baseUrl}img`} />
-      </div>
+      <ExampleList imgPath={`${siteConfig.baseUrl}img`} />
     </div>
   );
 };
