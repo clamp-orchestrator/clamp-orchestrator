@@ -49,6 +49,11 @@
     right: 0;
     margin-left: auto;
     height: 100%;
+    max-width: 100%;
+}
+
+.getting-started-ctr .banner .show-medium-screen {
+    display: none;
 }
 
 .getting-started-ctr .content-ctr {
@@ -72,10 +77,22 @@
     .getting-started-ctr .banner .hide-medium-screen {
         display: none;
     }
+    .getting-started-ctr .banner .show-medium-screen {
+        display: block;
+    }
 }
 
 @media only screen and (max-width: 1023px) {
     .getting-started-ctr .content-ctr {
         padding: 80px 6vw;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    .getting-started-ctr .banner {
+        position: static;
+        height: 350px;
+        margin-bottom: -80px;
+        margin-top: -50px;
     }
 }

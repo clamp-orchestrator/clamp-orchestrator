@@ -15,6 +15,11 @@ const GettingStarted = (props) => {
           src={`${baseUrl}img/banner_desktop.png`}
           alt=""
         />
+        <img
+          className="show-medium-screen"
+          src={`${baseUrl}img/banner_mobile.png`}
+          alt=""
+        />
       </div>
       <div className="content-ctr">
         <div className="content">
