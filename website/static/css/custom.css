@@ -96,6 +96,19 @@ h1, h2, h3, h4, h5, h6 {
         margin-top: 98px;
         border: 1px solid #EDEDED;
     }
+
+    .docMainWrapper .mainContainer {
+        padding: 60px 0;
+    }
+
+    .tocActive .onPageNav {
+        top: 195px;
+    }
+
+    .onPageNav .toc-headings > li > a.active,
+    .onPageNav .toc-headings > li > a.hover {
+        color: #1EBFC9;
+    }
 }
 
 @media only screen and (min-width: 1400px) {
