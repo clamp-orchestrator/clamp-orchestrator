@@ -28,10 +28,7 @@
 }
 
 .fixedHeaderContainer header .headerTitleWithLogo {
-  font-size: clamp(12px, 0.6vw, 15px);
-  color: #151b3b;
-  font-weight: 500;
-  text-transform: uppercase;
+  display: none;
 }
 
 .navigationSlider .slidingNav ul li a {

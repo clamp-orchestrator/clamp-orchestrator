@@ -5,11 +5,13 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+const baseUrl = "/clamp-orchestrator/";
+
 const siteConfig = {
   title: "Clamp", // Title for your website.
   tagline: "A workflow orchestrator for microservices",
   url: "https://clamp-orchestrator.github.io", // Your website URL
-  baseUrl: "/clamp-orchestrator/", // Base URL for your project */
+  baseUrl: baseUrl, // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
@@ -22,6 +24,7 @@ const siteConfig = {
   //   organizationName: 'JoelMarcey'
 
   headerLinks: [
+    { href: baseUrl, label: "Clamp" },
     { doc: "about-docs", label: "Documentation" },
     { blog: true, label: "Blog" },
     { href: "https://github.com/clamp-orchestrator", label: "Github" },

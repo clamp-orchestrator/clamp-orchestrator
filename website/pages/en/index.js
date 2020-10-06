@@ -1,6 +1,7 @@
 const React = require("react");
 const STATIC_FILES_PATH = process.cwd();
 const getExamplesScript = require(`${STATIC_FILES_PATH}/static/js/customExamplesScript.js`);
+const getChangeLogoLinkScript = require(`${STATIC_FILES_PATH}/static/js/changeLogoLink.js`);
 const Button = ({ className, children }) => {
   return <button className={`button medium ${className}`}>{children}</button>;
 };
@@ -172,6 +173,7 @@ const Examples = ({ siteConfig }) => {
 
 const Index = (props) => {
   const { config: siteConfig } = props;
+  const globalScript = getChangeLogoLinkScript();
 
   return (
     <div className="wrapper">
@@ -179,6 +181,7 @@ const Index = (props) => {
       <FeaturesList siteConfig={siteConfig} />
       <ClampSummary siteConfig={siteConfig} />
       <Examples siteConfig={siteConfig} />
+      <script dangerouslySetInnerHTML={{ __html: globalScript }} />
     </div>
   );
 };
