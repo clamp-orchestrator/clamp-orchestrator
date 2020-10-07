@@ -39,7 +39,7 @@ Execute the following command directly on the console in the project directort
 
 Execute the circleci cli command to pull respective docker images and run the command as it would execute on the circle ci infrastructure. This makes it easy to debug issues when the tests are passing locally but are failing on circle ci infrastructure.
 
-`circleci local execute --job test_and_publish`
+`circleci local execute --job test`
 
 ### Pull request completeness check
 
