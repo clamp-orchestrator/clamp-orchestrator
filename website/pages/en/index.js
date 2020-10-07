@@ -2,8 +2,12 @@ const React = require("react");
 const STATIC_FILES_PATH = process.cwd();
 const getExamplesScript = require(`${STATIC_FILES_PATH}/static/js/customExamplesScript.js`);
 const getChangeLogoLinkScript = require(`${STATIC_FILES_PATH}/static/js/changeLogoLink.js`);
-const Button = ({ className, children }) => {
-  return <button className={`button medium ${className}`}>{children}</button>;
+const ButtonLink = ({ className, children, link }) => {
+  return (
+    <a href={link}>
+      <button className={`button medium ${className}`}>{children}</button>
+    </a>
+  );
 };
 
 const GettingStarted = (props) => {
@@ -31,8 +35,8 @@ const GettingStarted = (props) => {
             monoliths seamlessly
           </div>
           <div className="actions">
-            <Button className="transparent-button">GET STARTED</Button>
-            <Button className="block-button">INSTALL</Button>
+            <ButtonLink className="transparent-button" link={`${baseUrl}docs/quickstart`}>GET STARTED</ButtonLink>
+            <ButtonLink className="block-button" link={`${baseUrl}docs/installation`}>INSTALL</ButtonLink>
           </div>
         </div>
       </div>
