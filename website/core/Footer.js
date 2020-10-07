@@ -10,7 +10,7 @@ const React = require('react');
 function Footer() {
     return (
         <footer className="footer thin">
-            <span className="medium red">Contact Us </span>
+            <span className="medium red"><a href="mailto:clamp@sahaj.ai">Contact Us </a></span>
             to know more about Clamp
         </footer>
     );
