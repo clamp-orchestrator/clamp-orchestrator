@@ -26,14 +26,11 @@ const siteConfig = {
   headerLinks: [
     { href: baseUrl, label: "Clamp" },
     { doc: "about-docs", label: "Documentation" },
-    { blog: true, label: "Blog" },
     { href: "https://github.com/clamp-orchestrator", label: "Github" },
   ],
 
   /* path to images for header/footer */
   headerIcon: "img/logo.svg",
-  footerIcon: "img/favicon.ico",
-  favicon: "img/favicon.ico",
 
   /* Colors for website */
   colors: {
