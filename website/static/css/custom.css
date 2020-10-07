@@ -70,6 +70,12 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0;
 }
 
+.onPageNav .toc-headings > li > a.active,
+.onPageNav .toc-headings > li > a.hover {
+    color: #1EBFC9;
+    font-weight: 300;
+}
+
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
 }
 
@@ -103,11 +109,6 @@ h1, h2, h3, h4, h5, h6 {
 
     .tocActive .onPageNav {
         top: 195px;
-    }
-
-    .onPageNav .toc-headings > li > a.active,
-    .onPageNav .toc-headings > li > a.hover {
-        color: #1EBFC9;
     }
 }
 
