@@ -4,11 +4,11 @@ jobs:
     docker:
       - image: node:lts
     steps:
+      - checkout 
       - run:
           name: install dependencies
           command: |
             ls
-            cd website/
       - restore_cache:
           keys:
             - npm-cache-{{ arch }}-{{ .Branch }}-{{ checksum "website/package.json" }}
