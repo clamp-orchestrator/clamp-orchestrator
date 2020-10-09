@@ -7,6 +7,7 @@ jobs:
       - run:
           name: install dependencies
           command: |
+            ls
             cd website/
       - restore_cache:
           keys:
