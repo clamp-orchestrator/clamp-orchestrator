@@ -6,21 +6,23 @@ sidebar_label: Authors
 
 ### Clamp Core
 
-- Dantin Kakkar
-- Lohith KM
-- Priyank Gupta
-- Tejash L
+- [Dantin Kakkar](https://github.com/dantinkakkar)
+- [Kartikay Shandil](https://github.com/kartikay101)
+- [Lohith KM](https://github.com/lohith46)
+- [Priyank Gupta](https://github.com/priyaaank)
+- [Tejash L](https://github.com/tejash-jl)
 
 ### Clamp Portal
 
-- Priyank Gupta
-- Tejash L 
+- [Kartikay Shandil](https://github.com/kartikay101)
+- [Priyank Gupta](https://github.com/priyaaank)
+- [Tejash L](https://github.com/tejash-jl)
 
 ### Clamp Docs
 
-- Dantin Kakkar
-- Lohith KM
+- [Dantin Kakkar](https://github.com/dantinkakkar)
+- [Lohith KM](https://github.com/lohith46)
 - Nikita Oliver
-- Priyank Gupta
-- Saurav Joshi
-- Tejash L
+- [Priyank Gupta](https://github.com/priyaaank)
+- [Saurav Joshi](https://github.com/sauravj20)
+- [Tejash L](https://github.com/tejash-jl)
