@@ -12,8 +12,8 @@ jobs:
             - npm-cache-{{ arch }}-
       - run: 
           name: install dependencies
+          working_directory: ~/website
           command: |
-            cd website
             npm ci
       - save_cache:
           paths:
