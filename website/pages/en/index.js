@@ -101,15 +101,14 @@ const ClampSummary = ({ siteConfig }) => {
     <div className="summary-ctr">
       <div className="illustration">
         <img
-          src={`${siteConfig.baseUrl}img/temp_gif.png`}
+          src={`${siteConfig.baseUrl}img/clamp-overview.gif`}
           alt="summary_image"
         />
       </div>
       <div className="content">
         <h2 className="title medium">Clamp overview</h2>
         <div className="description">
-          A peek into Clamp framework, it's philosophy and the supporting
-          toolchain
+          Clamp is a microservices orchestration and workflow manegement framework. It is built with a view that orchestration results in a more readable and scalable architecture for distributed services. Written in GoLang, Clamp is scalable and ideal for monolith strangulation to microservices.
         </div>
       </div>
     </div>
