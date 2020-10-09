@@ -8,12 +8,12 @@ git pull origin master
 # Run commands inside webside directory
 cd website
 npm run build
-mkdir ./_site
-mv build/* ../_site
+mkdir ../_site
+mv build/clamp-orchestrator/* ../_site
 
 # Run commands inside root directory
 cd ..
-find . -maxdepth 1 ! -name '_site' ! -name '.git' ! -name '.gitignore' ! -name '.circleci' -exec rm -rf {} \;
+find . -maxdepth 1 ! -name '_site' ! -name '.git' ! -name '.gitignore' ! -name '.circleci' -exec git rm -rf {} \;
 mv ./_site/* .
 rm -R _site/
 
