@@ -7,9 +7,9 @@ jobs:
       - checkout 
       - restore_cache:
           keys:
-            - npm-cache-{{ .Branch }}-{{ checksum "website/package.json" }}
-            # - npm-cache-{{ arch }}-{{ .Branch }}-
-            # - npm-cache-{{ arch }}-
+            - npm-cache-{{ arch }}-{{ .Branch }}-{{ checksum "website/package.json" }}
+            - npm-cache-{{ arch }}-{{ .Branch }}-
+            - npm-cache-{{ arch }}-
       - run: 
           name: install dependencies
           command: |
