@@ -11,10 +11,10 @@ jobs:
             cd website
       - restore_cache:
           keys:
-            - npm-cache-{{ arch }}-{{ .Branch }}-{{ checksum "website/package.json" }}
-            - npm-cache-{{ arch }}-{{ .Branch }}-
-            - npm-cache-{{ arch }}-
-      - run: npm install
+            - npm-cache-{{ .Branch }}-{{ checksum "website/package.json" }}
+            # - npm-cache-{{ arch }}-{{ .Branch }}-
+            # - npm-cache-{{ arch }}-
+      - run: npm ci
       - save_cache:
           paths:
             - website/node_modules

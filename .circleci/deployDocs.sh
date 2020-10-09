@@ -6,7 +6,6 @@ git checkout master
 git pull origin master
 
 # Run commands inside webside directory
-cd website
 npm run build
 mkdir ./_site
 mv build/* ./_site
