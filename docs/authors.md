@@ -22,7 +22,6 @@ sidebar_label: Authors
 
 - [Dantin Kakkar](https://github.com/dantinkakkar)
 - [Lohith KM](https://github.com/lohith46)
-- Nikita Oliver
 - [Priyank Gupta](https://github.com/priyaaank)
 - [Saurav Joshi](https://github.com/sauravj20)
 - [Tejash L](https://github.com/tejash-jl)

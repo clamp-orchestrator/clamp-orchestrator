@@ -13,7 +13,7 @@ jobs:
             - npm-cache-{{ arch }}-{{ .Branch }}-{{ checksum "website/package.json" }}
             - npm-cache-{{ arch }}-{{ .Branch }}-
             - npm-cache-{{ arch }}-
-      - run: npm install 
+      - run: npm install
       - save_cache:
           paths:
             - website/node_modules
