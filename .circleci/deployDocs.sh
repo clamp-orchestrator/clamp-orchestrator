@@ -1,4 +1,4 @@
-!#/bin/bash
+#!/bin/bash
 git config user.name "$(git log master -1 --pretty=%an)"
 git config user.email "$(git log master -1 --pretty=%ae)"
 
