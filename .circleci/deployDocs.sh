@@ -18,6 +18,7 @@ find . -maxdepth 1 ! -name '_site' ! -name '.git' ! -name '.gitignore' ! -name '
 mv ./_site/* .
 rm -R _site/
 
+# Update gh-pages
 git add -fA
 git commit --allow-empty -m "$(git log master -1 --pretty=%B)"
 git push -q https://${DOCS_GITHUB_TOKEN}@github.com/ArturBa/clamp-orchestrator.git ph-pages
