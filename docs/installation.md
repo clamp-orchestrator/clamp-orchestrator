@@ -5,7 +5,7 @@ title: Installation
 
 # Building from source
 - Install GoLang on your system, instructions for various platforms can be found [here](https://golang.org/doc/install).
-- Clone the [Clamp repository](https://gitlab.com/sahajsoft/clamp/clamp-core).
+- Clone the [Clamp repository](https://github.com/clamp-orchestrator/clamp-core).
 - `cd` into the project.
 - Configure PostgreSQL, Kafka and RabbitMQ in *config/env.go* with your settings.
 - Run `go get` to fetch and install all dependencies
