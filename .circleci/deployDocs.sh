@@ -4,6 +4,7 @@ git config user.email "$(git log master -1 --pretty=%ae)"
 
 git checkout master
 git pull origin master
+git checkout gh-pages
 
 # Run commands inside webside directory
 cd website
@@ -17,7 +18,6 @@ find . -maxdepth 1 ! -name '_site' ! -name '.git' ! -name '.gitignore' ! -name '
 mv ./_site/* .
 rm -R _site/
 
-git checkout gh-pages
 git add -fA
 git commit --allow-empty -m "$(git log master -1 --pretty=%B)"
 git push -f origin gh-pages
