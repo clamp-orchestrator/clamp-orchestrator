@@ -9,7 +9,7 @@ git pull origin master
 cd website
 npm run build
 mkdir ./_site
-mv build/* ./_site
+mv build/* ../_site
 
 # Run commands inside root directory
 cd ..
@@ -20,6 +20,6 @@ rm -R _site/
 git checkout gh-pages
 git add -fA
 git commit --allow-empty -m "$(git log master -1 --pretty=%B)"
-git push -f origin master
+git push -f origin gh-pages
 
 echo "documentation updated successfully"
