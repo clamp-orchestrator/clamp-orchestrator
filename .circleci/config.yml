@@ -4,10 +4,7 @@ jobs:
     docker:
       - image: node:lts
     steps:
-      - run:
-        name: Get repository
-        command: |
-          git clone --depth 1 https://${DOCS_GITHUB_TOKEN}@github.com/ArturBa/clamp-orchestrator.git 
+      - checkout
       - restore_cache:
           keys:
             - npm-cache-{{ arch }}-{{ .Branch }}-{{ checksum "website/package.json" }}
