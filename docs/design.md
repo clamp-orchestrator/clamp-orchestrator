@@ -10,7 +10,7 @@ sidebar_label: Design & architecture
 Clamp lets you stitch together services in your distributed platform. Built primarily as a microservices orchestrator, it serves to cut down on boilerplate and decomposes complexities related to inter-service communication. Define workflows that seamlessly route to your services over both synchronous and asynchronous communication calls.
 
 ## Battle-tested design
-![enter image description here](arch.png)
+![architecture](assets/archi.png)
  - Approach used on multiple platforms in production.
  - Seamless orchestration at scale
  - Facilitates workflow management
