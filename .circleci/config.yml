@@ -33,4 +33,4 @@ workflows:
           filters:
             branches:
               only:
-                - issue/5
+                - master
