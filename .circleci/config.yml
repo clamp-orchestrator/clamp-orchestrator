@@ -23,7 +23,7 @@ jobs:
       - deploy:
           name: Deploy Release to GitHub
           command: |
-            if [ $CIRCLE_BRANCH == 'issue/5' ]; then
+            if [ $CIRCLE_BRANCH == 'master' ]; then
               bash .circleci/deployDocs.sh
             fi
 workflows:
