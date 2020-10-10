@@ -15,7 +15,6 @@ mv build/clamp-orchestrator/* ../_site
 cd ..
 git checkout gh-pages
 find . -maxdepth 1 ! -name '_site' ! -name '.git' ! -name '.gitignore' ! -name '.circleci' -exec rm -rf {} \;
-ls  -al
 mv ./_site/* .
 rm -R _site/
 
