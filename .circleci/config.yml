@@ -5,16 +5,16 @@ jobs:
       - image: node:lts
     steps:
       - checkout
-      - run:
-          name: install dependencies
-          command: |
-            cd website/
       - restore_cache:
           keys:
             - npm-cache-{{ arch }}-{{ .Branch }}-{{ checksum "website/package.json" }}
             - npm-cache-{{ arch }}-{{ .Branch }}-
             - npm-cache-{{ arch }}-
-      - run: npm install
+      - run:
+          name: install dependencies
+          working_directory: ./website
+          command: |
+            npm ci
       - save_cache:
           paths:
             - website/node_modules
