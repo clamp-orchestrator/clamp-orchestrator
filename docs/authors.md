@@ -7,6 +7,7 @@ sidebar_label: Authors
 ### Clamp Core
 
 - [Dantin Kakkar](https://github.com/dantinkakkar)
+- [Jayant](https://github.com/heaven00)
 - [Kartikay Shandil](https://github.com/kartikay101)
 - [Lohith KM](https://github.com/lohith46)
 - [Priyank Gupta](https://github.com/priyaaank)
@@ -20,6 +21,7 @@ sidebar_label: Authors
 
 ### Clamp Docs
 
+- [Artur Bauer](https://github.com/ArturBa)
 - [Dantin Kakkar](https://github.com/dantinkakkar)
 - [Lohith KM](https://github.com/lohith46)
 - [Priyank Gupta](https://github.com/priyaaank)
