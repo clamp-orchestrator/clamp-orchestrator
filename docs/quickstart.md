@@ -10,6 +10,10 @@ Once you've cloned the [project](https://github.com/clamp-orchestrator/clamp-cor
 
 The  docker-compose command will pull (zookeeper, kafka, rabbitMQ, postgres) images from Docker Hub and then link them together to Clamp.  
 
+You can access the documentation by opening the following url in the browser
+
+`http://localhost:8080/swagger/index.html`
+
 After the command completes we can now view the status of Clamp.
 
     docker-compose ps
