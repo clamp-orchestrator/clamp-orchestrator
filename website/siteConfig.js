@@ -13,8 +13,8 @@ const siteConfig = {
   url: "https://clamp.sahaj.ai", 
   baseUrl: baseUrl, 
   
-  projectName: "clamp-orchestrator",
-  organizationName: "clamp-orchestrator",
+  projectName: "",
+  organizationName: "",
 
   headerLinks: [
     { href: baseUrl, label: "Clamp" },
