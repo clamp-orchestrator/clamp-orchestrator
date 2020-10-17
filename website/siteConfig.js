@@ -5,12 +5,12 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-const baseUrl = "/clamp-orchestrator/";
+const baseUrl = "/";
 
 const siteConfig = {
   title: "Clamp", 
   tagline: "A workflow orchestrator for microservices",
-  url: "https://clamp-orchestrator.github.io", 
+  url: "https://clamp.sahaj.ai", 
   baseUrl: baseUrl, 
   
   projectName: "clamp-orchestrator",
