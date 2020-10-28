@@ -20,6 +20,7 @@ const siteConfig = {
     { href: baseUrl, label: "Clamp" },
     { doc: "about-docs", label: "Documentation" },
     { href: "https://github.com/clamp-orchestrator", label: "Github" },
+    { href: "https://gitter.im/ClampOrchestrator/community", label: "Help" },
   ],
 
   headerIcon: "img/logo.svg",
