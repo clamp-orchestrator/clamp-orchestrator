@@ -8,8 +8,8 @@ title: About documentation
 This is Clamp orchestartor documentation section. It is organized to cover various aspects of the orchestrator across various dimensions.
 
 * If you are looking to get started using Clamp, please head over to the [Quickstart](quickstart.md) to jump right in.
-* If you are looking to understand the philosophy, concepts and internals of Clamp, visit []() to read about those aspects.
-* If you are looking to contribute (features, plugins, documentation or more) and grow Clamp, please heave over to [Contribution guide]() to read and understand the process.
+* If you are looking to understand the philosophy, concepts and internals of Clamp, visit [Concepts](design) to read about those aspects.
+* If you are looking to contribute (features, plugins, documentation or more) and grow Clamp, please heave over to [Contribution guide](contribution-guide.md) to read and understand the process.
 * If you are looking to raise an issue that you have encountered with the use of Clamp, please visit out [Support]() section to see ways and forums where community can provide help. Alternatively, create an issue for [Clamp-Core](https://github.com/clamp-orchestrator/clamp-core/issues) or [Clamp Portal](https://github.com/clamp-orchestrator/clamp-portal/issues) respectively. 
 
 # Navigation
