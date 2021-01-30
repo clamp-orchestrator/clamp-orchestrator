@@ -33,13 +33,22 @@ Follow the installation instructions outlined in the installation doc [here](ins
 
 There are two ways to run the tests locally. 
 
-Execute the following command directly on the console in the project directort
+Execute the following command directly on the console in the project directory. To run tests using this command you must have following services running locally
+* Docker
+* Postgres
+* RabbitMQ 
+* Kafka
+* Zookeeper _(required by kafka setup)_
 
 `gotestsum -- clamp-core/executors clamp-core/models clamp-core/services`
 
-Execute the circleci cli command to pull respective docker images and run the command as it would execute on the circle ci infrastructure. This makes it easy to debug issues when the tests are passing locally but are failing on circle ci infrastructure.
+Execute the circleci cli command to pull respective docker images and run the command as it would execute on the circle ci infrastructure. This makes it easy to debug issues when the tests are passing locally but are failing on circle ci infrastructure. This does not require any components to be setup for the test run.   
 
-`circleci local execute --job test`
+`./runTest.sh`
+
+or
+
+`circleci local execute --job test -e LOCALCI=true`
 
 ### Pull request completeness check
 
